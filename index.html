@@ -1,0 +1,208 @@
+<<!DOCTYPE html>
+<html>
+<head>
+<title>My Portfolio</title>
+
+<style>
+
+body{
+font-family: Arial;
+margin:0;
+background:pink;
+}
+
+header{
+background:#333;
+color:white;
+text-align:center;
+padding:40px;
+}
+
+nav{
+background:#555;
+text-align:center;
+padding:12px;
+}
+
+nav a{
+color:white;
+margin:15px;
+text-decoration:none;
+font-weight:bold;
+}
+
+nav a:hover{
+color:yellow;
+}
+
+section{
+padding:40px;
+}
+
+.project{
+background:white;
+padding:20px;
+margin:15px 0;
+border-radius:8px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Skill Bar */
+
+.skill{
+margin:20px 0;
+}
+
+.skill-name{
+font-weight:bold;
+margin-bottom:5px;
+}
+
+.skill-bar{
+background:#ddd;
+height:20px;
+border-radius:10px;
+}
+
+.skill-level{
+height:20px;
+background:#4CAF50;
+border-radius:10px;
+}
+
+/* Individual skill percentages */
+
+.html{width:90%;}
+.css{width:85%;}
+.java{width:70%;}
+.python{width:75%;}
+.c{width:80%;}
+
+footer{
+background:#333;
+color:white;
+text-align:center;
+padding:15px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1 id="name"></h1>
+<p>Student | Beginner Programmer</p>
+</header>
+
+<nav>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+<h2>About Me</h2>
+<p>
+I am a student interested in programming and web development.
+I enjoy learning HTML, CSS, Java, Python, C programming, and Linux commands.
+</p>
+</section>
+
+<section id="skills">
+<h2>Skills</h2>
+
+<div class="skill">
+<div class="skill-name">HTML</div>
+<div class="skill-bar">
+<div class="skill-level html"></div>
+</div>
+</div>
+
+<div class="skill">
+<div class="skill-name">CSS</div>
+<div class="skill-bar">
+<div class="skill-level css"></div>
+</div>
+</div>
+
+<div class="skill">
+<div class="skill-name">Java</div>
+<div class="skill-bar">
+<div class="skill-level java"></div>
+</div>
+</div>
+
+<div class="skill">
+<div class="skill-name">Python</div>
+<div class="skill-bar">
+<div class="skill-level python"></div>
+</div>
+</div>
+
+<div class="skill">
+<div class="skill-name">C Programming</div>
+<div class="skill-bar">
+<div class="skill-level c"></div>
+</div>
+</div>
+
+</section>
+
+<section id="projects">
+<h2>My Projects</h2>
+
+<div class="project">
+<h3>Portfolio Website</h3>
+<p>This website created using HTML and CSS.</p>
+</div>
+
+<div class="project">
+<h3>My Project File</h3>
+<p>
+<a href="https://1drv.ms/u/c/22780a1f7d32355f/IQDJyt1Po7_6TLfIqkqAtIOYAQoD8DxniXkG7mRCV51W0uU?e=kJw8Mf" target="_blank">
+View Project
+</a>
+</p>
+</div>
+
+</section>
+
+<section id="contact">
+<h2>Contact</h2>
+
+<p>Email: <a href="mailto:sreelakshmit2007@gmail.com">sreelakshmit2007@gmail.com</a></p>
+
+<p>Phone: 8848892864</p>
+
+<p>LinkedIn:
+<a href="https://www.linkedin.com/in/sreelakshmi-t-54b798379" target="_blank">
+View My LinkedIn Profile
+</a>
+</p>
+
+</section>
+
+<footer>
+<p>© 2026 My Portfolio</p>
+</footer>
+
+<script>
+
+let name = "Hi, I'm Sreelakshmi";
+let i = 0;
+
+function typeEffect(){
+if(i < name.length){
+document.getElementById("name").innerHTML += name.charAt(i);
+i++;
+setTimeout(typeEffect,100);
+}
+}
+
+
+</script>
+
+</html>
