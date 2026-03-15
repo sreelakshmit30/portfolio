@@ -47,7 +47,7 @@ border-radius:8px;
 box-shadow:0 0 10px rgba(0,0,0,0.1);
 }
 
-/* Skill Bar */
+/* Skills */
 
 .skill{
 margin:20px 0;
@@ -62,15 +62,40 @@ margin-bottom:5px;
 background:#ddd;
 height:20px;
 border-radius:10px;
+overflow:hidden;
 }
 
 .skill-level{
 height:20px;
-background:#4CAF50;
 border-radius:10px;
+background:linear-gradient(90deg,#ff6a00,#ee0979,#00c6ff);
+width:0;
+animation: fillBar 2s forwards;
 }
 
-/* Individual skill percentages */
+/* animation percentages */
+
+.html{animation-delay:0.2s;}
+.css{animation-delay:0.4s;}
+.java{animation-delay:0.6s;}
+.python{animation-delay:0.8s;}
+.c{animation-delay:1s;}
+
+@keyframes fillBar{
+
+from{width:0;}
+
+to{}
+
+}
+
+/* target widths */
+
+.html{--width:90%;}
+.css{--width:85%;}
+.java{--width:70%;}
+.python{--width:75%;}
+.c{--width:80%;}
 
 .html{width:90%;}
 .css{width:85%;}
@@ -107,7 +132,7 @@ padding:15px;
 <h2>About Me</h2>
 <p>
 I am a student interested in programming and web development.
-I enjoy learning HTML, CSS, Java, Python, C programming, and Linux commands.
+I enjoy learning HTML, CSS, Java, Python, C programming and Linux commands.
 </p>
 </section>
 
@@ -191,7 +216,7 @@ View My LinkedIn Profile
 
 <script>
 
-let name = "Hi, I'm Sreelakshmi";
+let name = "Hi, I'm Sreelakshmi T";
 let i = 0;
 
 function typeEffect(){
@@ -202,7 +227,9 @@ setTimeout(typeEffect,100);
 }
 }
 
+typeEffect();
 
 </script>
 
+</body>
 </html>
